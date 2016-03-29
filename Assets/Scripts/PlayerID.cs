@@ -10,10 +10,14 @@ public class PlayerID : NetworkBehaviour {
 	private NetworkInstanceId playerNetID;
 	private Transform myTransform;
 
+	public Transform GH;
+	public Transform OHR;
+
 	public override void OnStartLocalPlayer(){
 		GetNetIdentity();
 		SetIdentity();
 		SetPair();
+
 
 	}
 
@@ -69,12 +73,20 @@ public class PlayerID : NetworkBehaviour {
 
 	string MakeUniqueIdentity() {
 		string uniqueName;
+		//if (GameObject.FindGameObjectsWithTag("Player").Length == 1) {
+		//	uniqueName = "GuangHua";
+		//} else if ((GameObject.FindGameObjectsWithTag("Player").Length == 2) || (GameObject.FindGameObjectsWithTag("Player").Length == 4)){
+		//	uniqueName = "Gunner " + playerNetID.ToString();
+		//} else if (GameObject.FindGameObjectsWithTag("Player").Length == 3) {
+		//	uniqueName = "OHR";
+		//} else {
+		//	uniqueName = "Spectator " + playerNetID.ToString();
+		//}
+		//return uniqueName;
 		if (GameObject.FindGameObjectsWithTag("Player").Length == 1) {
-			uniqueName = "GuangHua";
-		} else if ((GameObject.FindGameObjectsWithTag("Player").Length == 2) || (GameObject.FindGameObjectsWithTag("Player").Length == 4)){
-			uniqueName = "Gunner " + playerNetID.ToString();
-		} else if (GameObject.FindGameObjectsWithTag("Player").Length == 3) {
-			uniqueName = "OHR";
+			uniqueName = "Gunner GuangHua";
+		} else if (GameObject.FindGameObjectsWithTag("Player").Length == 2) {
+			uniqueName = "Gunner OHR";
 		} else {
 			uniqueName = "Spectator " + playerNetID.ToString();
 		}
@@ -84,29 +96,29 @@ public class PlayerID : NetworkBehaviour {
 	void SetPair() {
 		users = GameObject.FindGameObjectsWithTag("Player");
 		Debug.Log ("Number of PlayerX objects: " + users.Length);
-		if (users.Length == 2) {
+		if (users.Length == 1) {
 			//CmdSetPair(users[1], users[0]);
-			myTransform.GetComponentInChildren<MeshRenderer>().enabled = false;
-			myTransform.parent = users[0].transform;
-			myTransform.rotation = Quaternion.identity;
-			myTransform.localPosition = new Vector3 (0f, 2.0f, 0f);
+			//myTransform.GetComponentInChildren<MeshRenderer>().enabled = false;
+			users[0].transform.parent = GH;
+			users[0].transform.rotation = Quaternion.identity;
+			users[0].transform.localPosition = new Vector3 (0f, 1.0f, 0f);
 			if (isLocalPlayer) {
-				Debug.Log ("Client 2: " + users[1].name);
-				users[1].GetComponent<joystickTest>().enabled = false;
-				users[1].GetComponent<CharacterController>().enabled = false;
-				users[1].GetComponent<SerialEulerA>().enabled = true;
+				Debug.Log ("Client 2: " + users[0].name);
+				users[0].GetComponent<joystickTest>().enabled = false;
+				users[0].GetComponent<CharacterController>().enabled = false;
+				users[0].GetComponent<SerialEulerA>().enabled = true;
 			}
 
 		} else if (users.Length == 4) {
-			myTransform.parent = users[2].transform;
+			myTransform.parent = OHR;
 			myTransform.rotation = Quaternion.identity;
-			myTransform.localPosition = new Vector3 (0f, 3.0f, 0f);
+			myTransform.localPosition = new Vector3 (0f, 1.0f, 0f);
 			if (isLocalPlayer) {
-				Debug.Log ("Client 4: " + users[3].name);
-				users[3].GetComponent<joystickTest>().enabled = false;
-				users[3].GetComponent<CharacterController>().enabled = false;
-				users[3].GetComponent<MeshRenderer>().enabled = false;
-				users[3].GetComponent<SerialEulerA>().enabled = true;
+				Debug.Log ("Client 4: " + users[1].name);
+				users[1].GetComponent<joystickTest>().enabled = false;
+				users[1].GetComponent<CharacterController>().enabled = false;
+				//users[1].GetComponent<MeshRenderer>().enabled = false;
+				users[1].GetComponent<SerialEulerA>().enabled = true;
 			}
 		}
 	}

@@ -14,7 +14,7 @@ public class Wireframe : MonoBehaviour {
 	}
 
 	void OnPreRender() {
-		GL.wireframe = true;
+		GL.wireframe = false;
 	}
 	void OnPostRender() {
 		GL.wireframe = false;

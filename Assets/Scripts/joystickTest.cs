@@ -24,7 +24,7 @@ public class joystickTest : NetworkBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (isLocalPlayer) {
+		if (isServer) {
 			if (Mathf.Abs (Input.GetAxis ("Drive")) > superChargerStart) {
 				superChargerFactor = 1.75f;
 			} else {

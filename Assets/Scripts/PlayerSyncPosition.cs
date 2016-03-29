@@ -10,11 +10,13 @@ public class PlayerSyncPosition : NetworkBehaviour {
 	[SerializeField] float lerpRate = 15.0f;
 
 	private Vector3 lastPos;
-	private float threshold = 0.5f;
+	private float threshold = 0.25f;
 	
 	void Update () {
 		LerpPosition();
-		TransmitPosition();
+		if (isClient) {
+			TransmitPosition();
+		}
 	}
 
 	void LerpPosition() {

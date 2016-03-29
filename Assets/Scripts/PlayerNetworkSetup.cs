@@ -15,7 +15,8 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 			FPSCharacterCam.enabled = true;
 			audioListener.enabled = true; 
 		}
+
 	}
-	
+
 
 }

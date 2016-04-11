@@ -47,7 +47,7 @@ public class SerialEulerA : NetworkBehaviour {
 			string[] strEul= serialInput.Split (',');
 			if (strEul.Length > 5) {
 				direction = Quaternion.Euler (new Vector3( -float.Parse(strEul[5]), float.Parse (strEul[3]), float.Parse(strEul[4])));
-				this.transform.localRotation = direction;
+				gun.transform.localRotation = direction;
 				if (int.Parse(strEul[2]) == 1) {
 					//Gunfire
 					gunCode.Fire ();

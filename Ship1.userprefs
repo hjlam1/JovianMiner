@@ -1,19 +1,20 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SerialEulerA.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Resources.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerSyncPosition.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Wireframe.cs" Line="17" Column="18" />
-      <File FileName="Assets\Scripts\PlayerID.cs" Line="40" Column="26" />
-      <File FileName="Assets\Scripts\SerialEulerA.cs" Line="36" Column="26" />
-      <File FileName="Assets\Scripts\joystickTest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerNetworkSetup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerSyncRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\targetLife.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Resources.cs" Line="11" Column="2" />
+      <File FileName="Assets\Scripts\GunnerSetup.cs" Line="50" Column="2" />
+      <File FileName="Assets\Scripts\SerialB.cs" Line="34" Column="35" />
+      <File FileName="Assets\Scripts\PlayerID.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\joystickTest.cs" Line="22" Column="46" />
+      <File FileName="Assets\Scripts\joystickTest2.cs" Line="58" Column="5" />
+      <File FileName="Assets\Scripts\OreDeposit.cs" Line="39" Column="56" />
+      <File FileName="Assets\Scripts\BulletSpecs.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Displays.cs" Line="10" Column="3" />
+      <File FileName="Assets\WireframeRenderer\Script\StaticWireframeRenderer.cs" Line="8" Column="42" />
       <File FileName="Assets\Scripts\rayShoot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FireBullets.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\OreDeposit.cs" Line="23" Column="8" />
-      <File FileName="Assets\Scripts\BulletSpecs.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\targetLife.cs" Line="31" Column="24" />
+      <File FileName="Assets\Scripts\theGUI.cs" Line="19" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

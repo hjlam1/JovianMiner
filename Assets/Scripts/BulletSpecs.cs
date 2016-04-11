@@ -11,7 +11,7 @@ public class BulletSpecs : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 		//firedFrom = this.transform.forward;
-		transform.GetComponent<Rigidbody>().AddForce (-transform.forward * 100.0f);
+		transform.GetComponent<Rigidbody>().AddForce (transform.forward * 100.0f);
 		//transform.GetComponent<Rigidbody>().AddForce(
 	}
 	

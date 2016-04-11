@@ -10,8 +10,8 @@ public class PlayerID : NetworkBehaviour {
 	private NetworkInstanceId playerNetID;
 	private Transform myTransform;
 
-	public Transform GH;
-	public Transform OHR;
+	public GameObject GH;
+	public GameObject OHR;
 
 	public override void OnStartLocalPlayer(){
 		GetNetIdentity();
@@ -27,6 +27,8 @@ public class PlayerID : NetworkBehaviour {
 
 	void Awake () {
 		myTransform = transform;
+		GH = GameObject.Find("GuangHua");
+		OHR = GameObject.Find("OHR");
 		//Screen.SetResolution(768,1366, true);
 	}
 	
@@ -99,10 +101,11 @@ public class PlayerID : NetworkBehaviour {
 		if (users.Length == 1) {
 			//CmdSetPair(users[1], users[0]);
 			//myTransform.GetComponentInChildren<MeshRenderer>().enabled = false;
-			users[0].transform.parent = GH;
+			users[0].transform.parent = GH.transform;
 			users[0].transform.rotation = Quaternion.identity;
 			users[0].transform.localPosition = new Vector3 (0f, 1.0f, 0f);
 			if (isLocalPlayer) {
+				
 				Debug.Log ("Client 2: " + users[0].name);
 				users[0].GetComponent<joystickTest>().enabled = false;
 				users[0].GetComponent<CharacterController>().enabled = false;
@@ -110,7 +113,7 @@ public class PlayerID : NetworkBehaviour {
 			}
 
 		} else if (users.Length == 4) {
-			myTransform.parent = OHR;
+			myTransform.parent = OHR.transform;
 			myTransform.rotation = Quaternion.identity;
 			myTransform.localPosition = new Vector3 (0f, 1.0f, 0f);
 			if (isLocalPlayer) {

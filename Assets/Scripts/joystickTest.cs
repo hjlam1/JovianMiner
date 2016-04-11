@@ -12,12 +12,19 @@ public class joystickTest : NetworkBehaviour {
 	private float maxSuperChargerVolume = 0.4f;
 	public bool isMiningOn = false;
 	public float miningStrength;
-	private float baseMiningStrength = 100.0f;
+	private float baseMiningStrength = 400.0f;  // MINING RATE
 	private float comEfficiency;
 	private float comFactor = 0.9f;
+	private AudioSource[] rumble;
 
 	// Use this for initialization
 	void Start () {
+		rumble = ship.GetComponents<AudioSource>();
+		if (!isServer) {
+			rumble[0].enabled = false;
+			rumble[1].enabled = false;
+			rumble[2].enabled = false;
+		}
 
 	}
 	
@@ -25,51 +32,110 @@ public class joystickTest : NetworkBehaviour {
 	void Update () {
 
 		if (isServer) {
-			if (Mathf.Abs (Input.GetAxis ("Drive")) > superChargerStart) {
-				superChargerFactor = 1.75f;
-			} else {
-				superChargerFactor = 1.0f;
-			}
-			ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("Drive") * speedFactor * superChargerFactor);
-			ship.transform.Rotate (Vector3.up * Input.GetAxis ("Steering"));
 
-			if (Input.GetKeyUp(KeyCode.JoystickButton0)) {
-				isMiningOn = !isMiningOn;
+			if (ship.name.Equals("GuangHua")) {
+
+				if (Mathf.Abs (Input.GetAxis ("DriveG")) > superChargerStart) {
+					superChargerFactor = 1.75f;
+				} else {
+					superChargerFactor = 1.0f;
+				}
+				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveG") * speedFactor * superChargerFactor);
+				if (Input.GetAxis("DriveG") > 0) {
+					ship.transform.Rotate (Vector3.up * Input.GetAxis ("SteeringG"));
+				} else if (Input.GetAxis("DriveG") < 0) {
+					ship.transform.Rotate (Vector3.up * -Input.GetAxis ("SteeringG"));
+				}
+				if (Input.GetButtonDown("Com1G")) {
+					isMiningOn = !isMiningOn;
+				}
+				if (Input.GetKeyUp(KeyCode.A)) {
+					isMiningOn = !isMiningOn;
+				}
+				comEfficiency = 1-((Input.GetAxis ("SignalG") + 1) / 2 * comFactor);
+			
 			}
-			comEfficiency = 1-((Input.GetAxis ("Signal") + 1) / 2 * comFactor);
+
+			if (ship.name.Equals("OnyxHill")) {
+
+				if (Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart) {
+					superChargerFactor = 1.75f;
+				} else {
+					superChargerFactor = 1.0f;
+				}
+				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveO") * speedFactor * superChargerFactor);
+				ship.transform.Rotate (Vector3.up * Input.GetAxis ("SteeringO"));
+
+				if (Input.GetButtonDown("Com1O")) {
+					isMiningOn = !isMiningOn;
+				}
+				if (Input.GetKeyUp(KeyCode.B)) {
+					isMiningOn = !isMiningOn;
+				}
+				comEfficiency = 1-((Input.GetAxis ("SignalO") + 1) / 2 * comFactor);
+
+			}
+
 			miningStrength = baseMiningStrength * comEfficiency;
-			//Debug.Log (Input.GetAxis ("Signal"));
+
 			PlaySound ();
-		}
+		} 
+
+
 
 	}
 
 	void OnGUI () {
+		//GUI.Box (new Rect(0,0,100,50), miningStrength.ToString());
+		//GUI.Box (new Rect(0,0,100,50), miningStrength.ToString());
+
 		//GUI.Box(new Rect(10,10,100,90), miningStrength.ToString());
 	}
 		
 	void PlaySound() {
-		AudioSource[] rumble = ship.GetComponents<AudioSource>();
-		if ((rumble[0].isPlaying) && (Mathf.Abs (Input.GetAxis ("Drive")) > 0.05f)) {
-			//Debug.Log ("Modulate Engine");
-			rumble[0].pitch = 0.35f + (Mathf.Abs (Input.GetAxis ("Drive")) * revRange);
-			if (Mathf.Abs (Input.GetAxis ("Drive")) > superChargerStart) {
-				rumble[1].volume = maxSuperChargerVolume;
-				rumble[1].pitch = -0.5f + (Mathf.Abs (Input.GetAxis ("Drive")) * 2.0f);
+		
+		if (ship.name.Equals("GuangHua")) {
+
+			if ((rumble[0].isPlaying) && (Mathf.Abs (Input.GetAxis ("DriveG")) > 0.05f)) {
+				//Debug.Log ("Modulate Engine");
+				rumble[0].pitch = 0.35f + (Mathf.Abs (Input.GetAxis ("DriveG")) * revRange);
+				if (Mathf.Abs (Input.GetAxis ("DriveG")) > superChargerStart) {
+					rumble[1].volume = maxSuperChargerVolume;
+					rumble[1].pitch = -0.5f + (Mathf.Abs (Input.GetAxis ("DriveG")) * 2.0f);
+				} else {
+					rumble[1].volume = 0.0f;
+				}
 			} else {
-				rumble[1].volume = 0.0f;
+				rumble[0].pitch = 0.35f;
+				rumble[1].pitch = 0.7f;
 			}
-		} else {
-			rumble[0].pitch = 0.35f;
-			rumble[1].pitch = 0.7f;
 		}
 
+		if (ship.name.Equals("OnyxHill")) {
+
+			if ((rumble[0].isPlaying) && (Mathf.Abs (Input.GetAxis ("DriveO")) > 0.05f)) {
+				//Debug.Log ("Modulate Engine");
+				rumble[0].pitch = 0.35f + (Mathf.Abs (Input.GetAxis ("DriveO")) * revRange);
+				if (Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart) {
+					rumble[1].volume = maxSuperChargerVolume;
+					rumble[1].pitch = -0.5f + (Mathf.Abs (Input.GetAxis ("DriveO")) * 2.0f);
+				} else {
+					rumble[1].volume = 0.0f;
+				}
+			} else {
+				rumble[0].pitch = 0.35f;
+				rumble[1].pitch = 0.7f;
+			}
+
+		}
+
+
 		if (isMiningOn) {
-			if (!rumble[4].isPlaying) {
-				rumble[4].Play();
+			if (!rumble[2].isPlaying) {
+				rumble[2].Play();
 			}
 		} else {
-			rumble[4].Stop();
+			rumble[2].Stop();
 		}
 	}
 }

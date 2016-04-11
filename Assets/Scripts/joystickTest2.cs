@@ -12,31 +12,41 @@ public class joystickTest2 : NetworkBehaviour {
 	private float maxSuperChargerVolume = 0.4f;
 	public bool isMiningOn = false;
 	public float miningStrength;
-	private float baseMiningStrength = 100.0f;
+	private float baseMiningStrength = 1000.0f;
 	private float comEfficiency;
 	private float comFactor = 0.9f;
+	private AudioSource[] rumble;
 
 	// Use this for initialization
 	void Start () {
-
+		rumble = ship.GetComponents<AudioSource>();
+		if (!isServer) {
+			rumble[0].enabled = false;
+			rumble[1].enabled = false;
+			rumble[2].enabled = false;
+		}
 	}
 
 	// Update is called once per frame
 	void Update () {
 
-		if (isLocalPlayer) {
-			if (Mathf.Abs (Input.GetAxis ("Drive")) > superChargerStart) {
+		if (isServer) {
+			
+			if (Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart) {
 				superChargerFactor = 1.75f;
 			} else {
 				superChargerFactor = 1.0f;
 			}
-			ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("Drive") * speedFactor * superChargerFactor);
-			ship.transform.Rotate (Vector3.up * Input.GetAxis ("Steering"));
+			ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveO") * speedFactor * superChargerFactor);
+			ship.transform.Rotate (Vector3.up * Input.GetAxis ("SteeringO"));
 
-			if (Input.GetKeyUp(KeyCode.JoystickButton0)) {
+			if (Input.GetButtonDown("Com1O")) {
 				isMiningOn = !isMiningOn;
 			}
-			comEfficiency = 1-((Input.GetAxis ("Signal") + 1) / 2 * comFactor);
+			if (Input.GetKeyUp(KeyCode.B)) {
+				isMiningOn = !isMiningOn;
+			}
+			comEfficiency = 1-((Input.GetAxis ("SignalO") + 1) / 2 * comFactor);
 			miningStrength = baseMiningStrength * comEfficiency;
 			//Debug.Log (Input.GetAxis ("Signal"));
 			PlaySound ();
@@ -49,13 +59,13 @@ public class joystickTest2 : NetworkBehaviour {
 	}
 
 	void PlaySound() {
-		AudioSource[] rumble = ship.GetComponents<AudioSource>();
-		if ((rumble[0].isPlaying) && (Mathf.Abs (Input.GetAxis ("Drive")) > 0.05f)) {
+		
+		if ((rumble[0].isPlaying) && (Mathf.Abs (Input.GetAxis ("DriveO")) > 0.05f)) {
 			//Debug.Log ("Modulate Engine");
-			rumble[0].pitch = 0.35f + (Mathf.Abs (Input.GetAxis ("Drive")) * revRange);
-			if (Mathf.Abs (Input.GetAxis ("Drive")) > superChargerStart) {
+			rumble[0].pitch = 0.35f + (Mathf.Abs (Input.GetAxis ("DriveO")) * revRange);
+			if (Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart) {
 				rumble[1].volume = maxSuperChargerVolume;
-				rumble[1].pitch = -0.5f + (Mathf.Abs (Input.GetAxis ("Drive")) * 2.0f);
+				rumble[1].pitch = -0.5f + (Mathf.Abs (Input.GetAxis ("DriveO")) * 2.0f);
 			} else {
 				rumble[1].volume = 0.0f;
 			}
@@ -65,11 +75,11 @@ public class joystickTest2 : NetworkBehaviour {
 		}
 
 		if (isMiningOn) {
-			if (!rumble[4].isPlaying) {
-				rumble[4].Play();
+			if (!rumble[2].isPlaying) {
+				rumble[2].Play();
 			}
 		} else {
-			rumble[4].Stop();
+			rumble[2].Stop();
 		}
 	}
 }

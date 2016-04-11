@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2A924A7C-E451-ED1A-4566-45E45C19CFEC}</ProjectGuid>
+    <ProjectGuid>{D7422BCD-BC74-AF14-4A4F-2C964CA0944A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -48,18 +48,23 @@
      <Compile Include="Assets\Scripts\BulletSpecs.cs" />
      <Compile Include="Assets\Scripts\Displays.cs" />
      <Compile Include="Assets\Scripts\FireBullets.cs" />
+     <Compile Include="Assets\Scripts\GunnerSetup.cs" />
      <Compile Include="Assets\Scripts\LocalNetworkSetup.cs" />
      <Compile Include="Assets\Scripts\OreDeposit.cs" />
      <Compile Include="Assets\Scripts\PlayerID.cs" />
      <Compile Include="Assets\Scripts\PlayerNetworkSetup.cs" />
      <Compile Include="Assets\Scripts\PlayerSyncPosition.cs" />
      <Compile Include="Assets\Scripts\PlayerSyncRotation.cs" />
+     <Compile Include="Assets\Scripts\Resources.cs" />
+     <Compile Include="Assets\Scripts\SerialB.cs" />
      <Compile Include="Assets\Scripts\SerialEulerA.cs" />
      <Compile Include="Assets\Scripts\Wireframe.cs" />
      <Compile Include="Assets\Scripts\joystickTest.cs" />
      <Compile Include="Assets\Scripts\joystickTest2.cs" />
      <Compile Include="Assets\Scripts\rayShoot.cs" />
      <Compile Include="Assets\Scripts\targetLife.cs" />
+     <Compile Include="Assets\Scripts\theGUI.cs" />
+     <Compile Include="Assets\WireframeRenderer\Script\StaticWireframeRenderer.cs" />
      <None Include="Assets\Materials\sky5X\README.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
@@ -74,7 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{139C9E39-A4F7-7572-0A26-5C79D9A4F105}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{B58A388E-094F-96B6-B094-FEC94BB3F539}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

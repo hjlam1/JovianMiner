@@ -21,6 +21,9 @@ public class SerialEulerA : NetworkBehaviour {
 	//private float lobSpeed = 20000.0f;
 	
 	void Start () {
+		if (SystemInfo.supportsGyroscope) {
+			Debug.Log("Gyroscope Found!");
+		}
 		gunSound = gun.GetComponents<AudioSource>();
 		portList= SerialPort.GetPortNames();
 		for (int i = 0; i < portList.Length; i++) {

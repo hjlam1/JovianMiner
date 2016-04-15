@@ -16,1198 +16,187 @@ Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Shi
 Loading C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.235 seconds
+- Completed reload, in  0.228 seconds
 Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 50Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+desktop: 1366x768 50Hz; virtual: 1366x768 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 0.860462 ms
-displays connected: 1
+UnloadTime: 0.678025 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1c5cc -> priority: 1 
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: C:\Users\Henry\Desktop\MFADT\2016 - Spring\Thesis\ThesisA\Ship1\test1_Data\Managed\System.Xml.dll (this message is harmless)
+ClientSetPair
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 5e20 -> priority: 1 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+COM3
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 900
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 804
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 708
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 612
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 900
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 804
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 706
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 610
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 512
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 416
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 320
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 224
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 126
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+ClientSetPair
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 844
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 746
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 650
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 554
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 456
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 360
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 262
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 166
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 70
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 814
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 718
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 622
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 524
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 428
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 332
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 236
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 140
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 42
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: 22
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -68
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -100
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -100
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -100
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -96
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
+Hit for 100.   Capacity: -100
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at OreDeposit.OnTriggerStay (UnityEngine.Collider other) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
+Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.1.123:7777}
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.271731 ms
+UnloadTime: 2.728130 ms
 
-Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 295.
-Total: 2.114585 ms (FindLiveObjects: 0.031229 ms CreateObjectMapping: 0.015614 ms MarkObjects: 0.196418 ms  DeleteObjects: 1.870910 ms)
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 303.
+Total: 1.890254 ms (FindLiveObjects: 0.038626 ms CreateObjectMapping: 0.028353 ms MarkObjects: 0.567487 ms  DeleteObjects: 1.254964 ms)
 

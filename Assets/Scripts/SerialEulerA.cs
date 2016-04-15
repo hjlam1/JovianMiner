@@ -31,6 +31,7 @@ public class SerialEulerA : NetworkBehaviour {
 		}
 
 	}
+
 	void OnGUI () {
 		if (!isPortChosen) {
 			for (int i = 0; i < portList.Length; i++) {
@@ -41,6 +42,7 @@ public class SerialEulerA : NetworkBehaviour {
 			}
 		}
 	}
+	 
 	void Update () {
 		if (isPortChosen) {
 		try{

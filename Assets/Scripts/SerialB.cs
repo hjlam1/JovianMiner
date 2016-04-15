@@ -12,7 +12,7 @@ public class SerialB : NetworkBehaviour {
 
 	private AudioSource[] gunSound;
 	//public GameObject lobbedObject;
-	//public rayShoot gunCode;
+	public rayShoot gunCode;
 	public GameObject bullet_prefab;
 	private float gunNextTime2 = 0.0f;
 	private float gunInterval2 = 2.5f;
@@ -21,6 +21,9 @@ public class SerialB : NetworkBehaviour {
 	//private float lobSpeed = 20000.0f;
 
 	void Start () {
+		if (SystemInfo.supportsGyroscope) {
+			Debug.Log("Gyroscope Found!");
+		}
 		gunSound = gun.GetComponents<AudioSource>();
 		portList= SerialPort.GetPortNames();
 		for (int i = 0; i < portList.Length; i++) {
@@ -50,7 +53,7 @@ public class SerialB : NetworkBehaviour {
 					gun.transform.localRotation = direction;
 					if (int.Parse(strEul[2]) == 1) {
 						//Gunfire
-						//gunCode.Fire ();
+						gunCode.Fire ();
 						if (!gunSound[0].isPlaying) {
 							gunSound[0].Play ();
 
@@ -60,7 +63,7 @@ public class SerialB : NetworkBehaviour {
 					}
 					if ((int.Parse(strEul[1]) == 1) && (Time.time > gunNextTime2)) {
 						//Gunfire 2
-						Debug.Log ("Fire");
+						//Debug.Log ("Fire");
 						CmdLobBullet();
 						//CmdLobTheBullet();
 						gunNextTime2 = Time.time + gunInterval2;

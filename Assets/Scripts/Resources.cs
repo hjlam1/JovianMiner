@@ -7,7 +7,7 @@ public class Resources : NetworkBehaviour {
 	public GameObject smoke;
 	private float resource0RegenRate;
 	private float resource4RegenRate;
-	public float resource4 = 1000.0f;
+	//public float resource4 = 1000.0f;
 	public Material myFrame;
 	public Material hitMyFrame;
 
@@ -15,6 +15,7 @@ public class Resources : NetworkBehaviour {
 	[SyncVar] public float resource1 = 0f;
 	[SyncVar] public float resource2 = 0f;
 	[SyncVar] public float resource3 = 0f;
+	[SyncVar] public float resource4 = 1000.0f;
 	[SyncVar] public bool normal = true;
 
 
@@ -54,11 +55,11 @@ public class Resources : NetworkBehaviour {
 	}
 
 	void FixedUpdate() {
-		resource0 += resource0RegenRate;
 
-
-		resource4 += resource4RegenRate;
-
+		if (isServer) {
+			resource0 += resource0RegenRate;
+			resource4 += resource4RegenRate;
+		}
 	}
 
 

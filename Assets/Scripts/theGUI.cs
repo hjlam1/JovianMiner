@@ -16,9 +16,12 @@ public class theGUI : NetworkBehaviour {
 	}
 
 	void OnGUI() {
-		//GUI.Box (new Rect(200,0,100,50), myStuff.resource0.ToString());
-		//GUI.Box (new Rect(200,40,100,50), myStuff.resource1.ToString());
-		//GUI.Box (new Rect(200,80,100,50), myStuff.resource2.ToString());
-		//GUI.Box (new Rect(200,120,100,50), myStuff.normal.ToString());
+		if (isServer) {
+			GUI.Box (new Rect(200,0,80,20), myStuff.resource0.ToString());
+			GUI.Box (new Rect(200,20,80,20), myStuff.resource1.ToString());
+			GUI.Box (new Rect(200,40,80,20), myStuff.resource2.ToString());
+			GUI.Box (new Rect(200,60,80,20), myStuff.resource3.ToString());
+			GUI.Box (new Rect(200,80,80,20), myStuff.normal.ToString());
+		}
 	}
 }

@@ -10,7 +10,7 @@ public class rayShoot : NetworkBehaviour {
 	private Vector4 theHit;
 
 	void Start () {
-		beamDamage = 100.0f;
+		beamDamage = 200.0f;
 		beamDistance = 100.0f;
 	}
 	
@@ -18,15 +18,23 @@ public class rayShoot : NetworkBehaviour {
 	public void Fire () {
 		RaycastHit hit;
 
-		if (Physics.Raycast (this.transform.position, this.transform.forward, out hit, beamDistance)) {
+		if (Physics.Raycast (new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 0.5f) , this.transform.forward, out hit, beamDistance)) {
 			//this.GetComponent<LineRenderer>().SetPosition(0,this.transform.position);
 			//this.GetComponent<LineRenderer>().SetPosition(1, hit.point);
 			//Debug.Log(hit.point);
 			theHit = new Vector4(hit.point.x, hit.point.y, hit.point.z, beamDamage);
-			hit.transform.SendMessage ("CauseDamage", theHit, SendMessageOptions.DontRequireReceiver);
-
-
+			//hit.transform.SendMessage ("CauseDamage", theHit, SendMessageOptions.DontRequireReceiver);
+			string target = hit.transform.name;
+			Debug.Log (target);
+			CmdTellServerSomeoneDamaged( theHit, target);
 		}
+	}
+
+	[Command]
+
+	void CmdTellServerSomeoneDamaged( Vector4 hit, string target) {
+		GameObject go = GameObject.Find(target);
+		go.GetComponent<targetLife>().CauseDamage (hit);
 	}
 
 

@@ -28,13 +28,14 @@ public class targetLife : NetworkBehaviour {
 		}
 	}
 
-	void CauseDamage (Vector4 hit) {
+	public void CauseDamage (Vector4 hit) {
 		
 		//life -= hit.w;
 		myResources.resource4 -= hit.w;
 		Debug.Log ("Hit for " + hit.w + ".   Capacity: " + myResources.resource4);
 		//Instantiate (smoke, new Vector3(hit.x, hit.y, hit.z),this.transform.rotation);
 		//myResources.CmdRayHit(new Vector3(hit.x, hit.y, hit.z));
+
 
 	}
 
@@ -58,6 +59,7 @@ public class targetLife : NetworkBehaviour {
 			//Destroy (this.gameObject);
 		//}
 	}
+
 
 
 }

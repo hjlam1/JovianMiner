@@ -26,7 +26,7 @@ public class Resources : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 		resource0RegenRate = 0.5f;
-		resource4RegenRate = 2.0f;
+		resource4RegenRate = 1.5f;
 	}
 	
 	// Update is called once per frame

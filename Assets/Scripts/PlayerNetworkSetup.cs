@@ -18,5 +18,9 @@ public class PlayerNetworkSetup : NetworkBehaviour {
 
 	}
 
+	public override void OnDeserialize(NetworkReader reader, bool initialState)
+	{
+		base.OnDeserialize(reader, initialState);
+	}
 
 }

@@ -31,7 +31,7 @@ public class Resources : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (resource0 > 1000.0f ) {
+		if (resource0 >= 1000.0f ) {
 			resource0  = 1000.0f;
 		}
 		if (resource0 < 0.0f ) {

@@ -4,11 +4,12 @@ using UnityEngine.Networking;
 
 public class targetLife : NetworkBehaviour {
 
-	private float life;
+
 	private bool alive;
 	//public GameObject explosion;
 	//public GameObject bigExplosion;
 	public Resources myResources;
+	[SyncVar] float life;
 
 	//public AudioClip gunfireSound;
 	public GameObject myself;
@@ -31,7 +32,8 @@ public class targetLife : NetworkBehaviour {
 	public void CauseDamage (Vector4 hit) {
 		
 		//life -= hit.w;
-		myResources.resource4 -= hit.w;
+		//myResources.resource4 -= hit.w;
+		myResources.TakeDamage(hit.w);
 		Debug.Log ("Hit for " + hit.w + ".   Capacity: " + myResources.resource4);
 		//Instantiate (smoke, new Vector3(hit.x, hit.y, hit.z),this.transform.rotation);
 		//myResources.CmdRayHit(new Vector3(hit.x, hit.y, hit.z));

@@ -19,26 +19,18 @@ Loading C:\Users\Henry\Desktop\MFADT\Thesis\test2_Data\Managed\UnityEngine.Netwo
 - Completed reload, in  0.042 seconds
 Platform assembly: C:\Users\Henry\Desktop\MFADT\Thesis\test2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Henry\Desktop\MFADT\Thesis\test2_Data\Managed\System.dll (this message is harmless)
-desktop: 1920x1200 60Hz; virtual: 3840x1223 at -1920,0
+desktop: 1920x1080 60Hz; virtual: 3840x1103 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.458620 ms
+UnloadTime: 0.458931 ms
+Joystick disconnected ("Arduino Leonardo").
+ 
+(Filename:  Line: 714)
+
+Displays connected: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1274 -> priority: 1 
-ClientSetPair
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.1.141:57915}
-ClientSetPair
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
-
-Log: connection {1} has been disconnected by timeout; address {::ffff:192.168.1.141:60334}
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.224437 ms
-
-Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 299.
-Total: 0.979922 ms (FindLiveObjects: 0.012101 ms CreateObjectMapping: 0.012722 ms MarkObjects: 0.145529 ms  DeleteObjects: 0.809258 ms)
-
+  Thread -> id: 11d4 -> priority: 1 

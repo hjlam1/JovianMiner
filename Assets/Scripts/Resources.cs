@@ -62,5 +62,18 @@ public class Resources : NetworkBehaviour {
 		}
 	}
 
+	public void TakeDamage (float amount) {
+		if (!isServer) {
+			return;
+		}
+		resource4 -= amount;
+		RpcDamage(amount);
+	}
+
+	[ClientRpc]
+
+	void RpcDamage (float amount) {
+		Debug.Log("Took Damage:" + amount);
+	}
 
 }

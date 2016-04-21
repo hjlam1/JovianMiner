@@ -50,6 +50,8 @@
      <Compile Include="Assets\Scripts\FireBullets.cs" />
      <Compile Include="Assets\Scripts\GHText.cs" />
      <Compile Include="Assets\Scripts\GunnerSetup.cs" />
+     <Compile Include="Assets\Scripts\HelmetCam.cs" />
+     <Compile Include="Assets\Scripts\HelmetCamControl.cs" />
      <Compile Include="Assets\Scripts\LocalNetworkSetup.cs" />
      <Compile Include="Assets\Scripts\OHText.cs" />
      <Compile Include="Assets\Scripts\OreDeposit.cs" />

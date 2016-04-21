@@ -15,7 +15,12 @@ public class GHText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		GHTxt = GHResources.resource4.ToString() + "\n" +GHResources.resource1.ToString();
+		GHTxt =	  
+			  "       Solar: " + GHResources.resource0.ToString() + "\n"
+			+ "Resource 1: " + GHResources.resource1.ToString() + "\n"
+			+ "Resource 2: " + GHResources.resource2.ToString() + "\n"
+			+ "Resource 3: " + GHResources.resource3.ToString() + "\n"
+			+ "      Health: " + GHResources.resource4.ToString();
 
 		this.GetComponent<Text>().text = GHTxt;
 

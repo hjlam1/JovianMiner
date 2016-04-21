@@ -10,7 +10,7 @@ public class rayShoot : NetworkBehaviour {
 	private Vector4 theHit;
 
 	void Start () {
-		beamDamage = 200.0f;
+		beamDamage = 10.0f;
 		beamDistance = 100.0f;
 	}
 	
@@ -25,7 +25,7 @@ public class rayShoot : NetworkBehaviour {
 			theHit = new Vector4(hit.point.x, hit.point.y, hit.point.z, beamDamage);
 			//hit.transform.SendMessage ("CauseDamage", theHit, SendMessageOptions.DontRequireReceiver);
 			string target = hit.transform.name;
-			Debug.Log (target);
+			//Debug.Log (target);
 			CmdTellServerSomeoneDamaged( theHit, target);
 		}
 	}

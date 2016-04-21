@@ -34,7 +34,7 @@ public class targetLife : NetworkBehaviour {
 		//life -= hit.w;
 		//myResources.resource4 -= hit.w;
 		myResources.TakeDamage(hit.w);
-		Debug.Log ("Hit for " + hit.w + ".   Capacity: " + myResources.resource4);
+		//Debug.Log ("Hit for " + hit.w + ".   Capacity: " + myResources.resource4);
 		//Instantiate (smoke, new Vector3(hit.x, hit.y, hit.z),this.transform.rotation);
 		//myResources.CmdRayHit(new Vector3(hit.x, hit.y, hit.z));
 

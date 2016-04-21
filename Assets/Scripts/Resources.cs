@@ -11,6 +11,9 @@ public class Resources : NetworkBehaviour {
 	public Material myFrame;
 	public Material hitMyFrame;
 
+	private float maxResource0 = 1000.0f;
+	private float maxResource4 = 1000.0f;
+
 	[SyncVar] public float resource0 = 1000.0f;
 	[SyncVar] public float resource1 = 0f;
 	[SyncVar] public float resource2 = 0f;
@@ -26,19 +29,19 @@ public class Resources : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 		resource0RegenRate = 0.5f;
-		resource4RegenRate = 1.5f;
+		resource4RegenRate = 2.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (resource0 >= 1000.0f ) {
-			resource0  = 1000.0f;
+		if (resource0 > maxResource0 ) {
+			resource0 = maxResource0;
 		}
 		if (resource0 < 0.0f ) {
-			resource0  = 0.0f;
+			resource0 = 0.0f;
 		}
-		if (resource4 >= 1000.0f ) {
-			resource4  = 1000.0f;
+		if (resource4 >= maxResource4 ) {
+			resource4 = maxResource4;
 			normal = true;
 		} else {
 			normal = false;
@@ -57,8 +60,12 @@ public class Resources : NetworkBehaviour {
 	void FixedUpdate() {
 
 		if (isServer) {
-			resource0 += resource0RegenRate;
-			resource4 += resource4RegenRate;
+			if (resource0 < maxResource0) {
+				resource0 += resource0RegenRate;
+			}
+			if (resource4 < maxResource4) {
+				resource4 += resource4RegenRate;
+			}
 		}
 	}
 
@@ -66,8 +73,11 @@ public class Resources : NetworkBehaviour {
 		if (!isServer) {
 			return;
 		}
-		resource4 -= amount;
-		RpcDamage(amount);
+		if (resource4 - amount >=0) {
+			resource4 -= amount;
+			//RpcDamage(amount);
+		}
+
 	}
 
 	[ClientRpc]

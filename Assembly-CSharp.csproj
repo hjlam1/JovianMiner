@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\GHText.cs" />
      <Compile Include="Assets\Scripts\GunnerSetup.cs" />
      <Compile Include="Assets\Scripts\LocalNetworkSetup.cs" />
+     <Compile Include="Assets\Scripts\OHText.cs" />
      <Compile Include="Assets\Scripts\OreDeposit.cs" />
      <Compile Include="Assets\Scripts\PlayerID.cs" />
      <Compile Include="Assets\Scripts\PlayerNetworkSetup.cs" />

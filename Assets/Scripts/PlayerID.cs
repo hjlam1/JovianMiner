@@ -13,6 +13,9 @@ public class PlayerID : NetworkBehaviour {
 	public GameObject GH;
 	public GameObject OHR;
 
+	public Canvas GHCanvas;
+	public Canvas OHCanvas;
+
 	public override void OnStartLocalPlayer(){
 		GetNetIdentity();
 		SetIdentity();
@@ -29,6 +32,8 @@ public class PlayerID : NetworkBehaviour {
 		myTransform = transform;
 		GH = GameObject.Find("GuangHua");
 		OHR = GameObject.Find("OHR");
+		GHCanvas = GameObject.Find("Canvas GH").GetComponent<Canvas>();
+		OHCanvas = GameObject.Find("Canvas OH").GetComponent<Canvas>();
 		//Screen.SetResolution(768,1366, true);
 	}
 	
@@ -87,8 +92,11 @@ public class PlayerID : NetworkBehaviour {
 		//return uniqueName;
 		if (GameObject.FindGameObjectsWithTag("Player").Length == 1) {
 			uniqueName = "Gunner GuangHua";
+			GHCanvas.targetDisplay = 0;
+			OHCanvas.targetDisplay = 1;
 		} else if (GameObject.FindGameObjectsWithTag("Player").Length == 2) {
 			uniqueName = "Gunner OHR";
+
 		} else {
 			uniqueName = "Spectator " + playerNetID.ToString();
 		}

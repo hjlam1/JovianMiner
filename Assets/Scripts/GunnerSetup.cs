@@ -9,12 +9,16 @@ public class GunnerSetup : NetworkBehaviour {
 	//[SyncVar] public string playerUniqueIdentity;
 	//private NetworkInstanceId playerNetID;
 	//private Transform myTransform;
+	public GameObject GH;
+	public GameObject OHR;
+
+	private Canvas GHCanvas;
+	private Canvas OHCanvas;
 
 	[SerializeField] Camera FPSCharacterCam;
 	[SerializeField] AudioListener audioListener;
 
-	public GameObject GH;
-	public GameObject OHR;
+
 
 
 	public override void OnStartLocalPlayer() {
@@ -25,6 +29,7 @@ public class GunnerSetup : NetworkBehaviour {
 		
 		GH = GameObject.Find("GuangHua");
 		OHR = GameObject.Find("OnyxHill");
+
 		//Screen.SetResolution(768,1366, true);
 	}
 
@@ -40,12 +45,22 @@ public class GunnerSetup : NetworkBehaviour {
 			audioListener.enabled = true;
 
 		}
+		GHCanvas = GameObject.Find("Canvas GH").GetComponent<Canvas>();
+		OHCanvas = GameObject.Find("Canvas OH").GetComponent<Canvas>();
+
 		if (GameObject.FindGameObjectsWithTag("Gunner").Length == 1) {
 			ClientSetPair(this.gameObject, GH);
+			GHCanvas.targetDisplay = 0;
+			OHCanvas.targetDisplay = 1;
 		}
 		if (GameObject.FindGameObjectsWithTag("Gunner").Length == 2) {
 			ClientSetPair(this.gameObject, OHR);
+			GHCanvas.targetDisplay = 1;
+			OHCanvas.targetDisplay = 0;
 		}
+
+
+
 	}
 
 	void Update () {

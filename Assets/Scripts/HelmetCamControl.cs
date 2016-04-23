@@ -16,8 +16,9 @@ public class HelmetCamControl : NetworkBehaviour {
 
 	void Start () {
 		camDevices = WebCamTexture.devices;
+		Debug.Log("Cameras found: " + camDevices.Length);
 		for (int i=0; i< camDevices.Length; i++) {
-			Debug.Log(camDevices[i].name);
+			
 			camTextures[i] = new WebCamTexture(camDevices[i].name);
 			camTextures[i].Play();
 		}

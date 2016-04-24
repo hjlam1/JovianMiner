@@ -4,6 +4,7 @@ using UnityEngine.Networking;
 
 public class BulletSpecs : NetworkBehaviour {
 
+	private float bulletSpeed = 100.0f;
 	//[SyncVar]
 	//private float movementSpeed = 1000.0f;
 	//public Vector3 firedFrom;
@@ -11,7 +12,7 @@ public class BulletSpecs : NetworkBehaviour {
 	// Use this for initialization
 	void Start () {
 		//firedFrom = this.transform.forward;
-		transform.GetComponent<Rigidbody>().AddForce (transform.forward * 100.0f);
+		transform.GetComponent<Rigidbody>().AddForce (transform.forward * bulletSpeed);
 		//transform.GetComponent<Rigidbody>().AddForce(
 	}
 	

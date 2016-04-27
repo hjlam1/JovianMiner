@@ -17,7 +17,9 @@ public class SerialB : NetworkBehaviour {
 	private float gunNextTime2 = 0.0f;
 	private float gunInterval2 = 2.5f;
 	private bool isPortChosen = false;
+	private float gunLobCost = 2.0f;
 	private string[] portList;
+	private Resources myResources;
 	//private float lobSpeed = 20000.0f;
 
 	void Start () {
@@ -29,7 +31,7 @@ public class SerialB : NetworkBehaviour {
 		for (int i = 0; i < portList.Length; i++) {
 			Debug.Log (portList[i]);
 		}
-
+		myResources = this.GetComponentInParent<Resources>();
 	}
 	void OnGUI () {
 		if (!isPortChosen) {
@@ -51,7 +53,7 @@ public class SerialB : NetworkBehaviour {
 				if (strEul.Length > 5) {
 					direction = Quaternion.Euler (new Vector3( -float.Parse(strEul[5]), float.Parse (strEul[3]), float.Parse(strEul[4])));
 					gun.transform.localRotation = direction;
-					if (int.Parse(strEul[2]) == 1) {
+					if ((int.Parse(strEul[2]) == 1) && (myResources.GotResource(gunCode.laserCost, 0.0f, 0.0f, 0.0f, 0.0f))) {
 						//Gunfire
 						gunCode.Fire ();
 						if (!gunSound[0].isPlaying) {
@@ -61,7 +63,7 @@ public class SerialB : NetworkBehaviour {
 					} else {
 						gunSound[0].Stop();
 					}
-					if ((int.Parse(strEul[1]) == 1) && (Time.time > gunNextTime2)) {
+					if ((int.Parse(strEul[1]) == 1) && (Time.time > gunNextTime2) && (myResources.GotResource(0.0f, 0.0f, 0.0f, gunLobCost, 0.0f))) {
 						//Gunfire 2
 						//Debug.Log ("Fire");
 						CmdLobBullet();

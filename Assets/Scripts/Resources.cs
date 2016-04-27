@@ -80,6 +80,92 @@ public class Resources : NetworkBehaviour {
 
 	}
 
+	public void UseResource (float amount0, float amount1, float amount2, float amount3, float amount4) {
+		if (!isServer) {
+			return;
+		}
+		//Debug.Log(amount0.ToString() + " " + amount1.ToString());
+		if (resource0 - amount0 >=0) {
+			resource0 -= amount0;
+
+		}
+		if (resource1 - amount1 >=0) {
+			resource1 -= amount1;
+
+		}
+		if (resource2 - amount2 >=0) {
+			resource2 -= amount2;
+
+		}
+		if (resource3 - amount3 >=0) {
+			resource3 -= amount3;
+
+		}
+		if (resource4 - amount4 >=0) {
+			resource4 -= amount4;
+
+		}
+
+
+	}
+
+	public bool GotResource (float amount0, float amount1, float amount2, float amount3, float amount4) {
+		bool b0 = false;
+		bool b1 = false;
+		bool b2 = false;
+		bool b3 = false;
+		bool b4 = false;
+		if (resource0 - amount0 >=0) {
+			b0 = true;
+		}
+		if (resource1 - amount1 >=0) {
+			resource1 -= amount1;
+			b1 = true;
+		}
+		if (resource2 - amount2 >=0) {
+			resource2 -= amount2;
+			b2 = true;
+		}
+		if (resource3 - amount3 >=0) {
+			resource3 -= amount3;
+			b3 = true;
+		}
+		if (resource4 - amount4 >=0) {
+			resource4 -= amount4;
+			b4 = true;
+		}
+		if (b0 && b1 && b2 && b3 && b4) {
+			return true;
+		} else return false;
+	}
+
+	public void HitByBullet () {
+		float lossPercentage = 0.5f;
+		float lostR1 = 0;
+		float lostR2 = 0;
+		float lostR3 = 0;
+
+		if (!isServer) {
+			return;
+		}
+		if (resource1 > 0) {
+			lostR1 = Random.Range(0, resource1 * lossPercentage);
+			resource1 -= lostR1;
+		}
+		if (resource2 > 0) {
+			lostR2 = Random.Range(0, resource2 * lossPercentage);
+			resource2 -= lostR2;
+		}
+		if (resource3 > 0) {
+			lostR3 = Random.Range(0, resource3 * lossPercentage);
+			resource3 -= lostR3;
+		}
+
+		if (lostR1+lostR2+lostR3 > 0) {
+			Debug.Log (this.transform.name + " loses some resources");
+		}
+	}
+
 	[ClientRpc]
 
 	void RpcDamage (float amount) {

@@ -8,6 +8,7 @@ public class rayShoot : NetworkBehaviour {
 	public float beamDamage;
 	public float beamDistance;
 	private Vector4 theHit;
+	public float laserCost = 10.0f;
 
 	void Start () {
 		beamDamage = 10.0f;
@@ -17,7 +18,7 @@ public class rayShoot : NetworkBehaviour {
 	// Update is called once per frame
 	public void Fire () {
 		RaycastHit hit;
-
+		CmdUseResourceZero(this.transform.parent.name);
 		if (Physics.Raycast (new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 0.5f) , this.transform.forward, out hit, beamDistance)) {
 			//this.GetComponent<LineRenderer>().SetPosition(0,this.transform.position);
 			//this.GetComponent<LineRenderer>().SetPosition(1, hit.point);
@@ -37,5 +38,13 @@ public class rayShoot : NetworkBehaviour {
 		go.GetComponent<targetLife>().CauseDamage (hit);
 	}
 
+	[Command]
+	void CmdUseResourceZero(string shooter) {
+		
+		GameObject go = GameObject.Find(shooter);
+		//Debug.Log(shooter);
+		go.GetComponent<Resources>().UseResource(laserCost, 0.0f, 0.0f, 0.0f, 0.0f);
+
+	}
 
 }

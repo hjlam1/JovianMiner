@@ -14,6 +14,7 @@ public class SerialB : NetworkBehaviour {
 	//public GameObject lobbedObject;
 	public rayShoot gunCode;
 	public GameObject bullet_prefab;
+	public GameObject materialLocation;
 	private float gunNextTime2 = 0.0f;
 	private float gunInterval2 = 2.5f;
 	private bool isPortChosen = false;
@@ -93,17 +94,21 @@ public class SerialB : NetworkBehaviour {
 
 		}
 	}
-	[Command]
 
+	[Command]
 	public void CmdLobBullet() {
 		GameObject obj = (GameObject) Instantiate (bullet_prefab, new Vector3(gun.transform.position.x, gun.transform.position.y, gun.transform.position.z), gun.transform.rotation);
+		GameObject go = GameObject.Find(this.transform.parent.name);
+		go.GetComponent<Resources>().UseResource(0.0f, 0.0f, 0.0f, gunLobCost, 0.0f);
 		//BulletSpecs bullet = obj.GetComponent<BulletSpecs>();
 		//bullet.firedFrom = -gun.transform.forward * lobSpeed;
 		Destroy (obj, 5.0f);
 		//Debug.Log ("CmdLobBullet called");
 		//ClientScene.RegisterPrefab(obj);
 		NetworkServer.Spawn (obj);
+
 	}
+
 
 	public void CmdLobTheBullet() {
 		//lobbedObject.transform.localPosition = gun.transform.position;

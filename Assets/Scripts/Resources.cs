@@ -119,34 +119,37 @@ public class Resources : NetworkBehaviour {
 			b0 = true;
 		}
 		if (resource1 - amount1 >=0) {
-			resource1 -= amount1;
+			
 			b1 = true;
 		}
 		if (resource2 - amount2 >=0) {
-			resource2 -= amount2;
+			
 			b2 = true;
 		}
 		if (resource3 - amount3 >=0) {
-			resource3 -= amount3;
+			
 			b3 = true;
 		}
 		if (resource4 - amount4 >=0) {
-			resource4 -= amount4;
+			
 			b4 = true;
 		}
 		if (b0 && b1 && b2 && b3 && b4) {
 			return true;
-		} else return false;
+		} else {
+			return false;
+		}
 	}
 
-	public void HitByBullet () {
+	public float HitByBullet () {
 		float lossPercentage = 0.5f;
 		float lostR1 = 0;
 		float lostR2 = 0;
 		float lostR3 = 0;
+		float lostResources;
 
 		if (!isServer) {
-			return;
+			return 0.0f;
 		}
 		if (resource1 > 0) {
 			lostR1 = Random.Range(0, resource1 * lossPercentage);
@@ -161,9 +164,13 @@ public class Resources : NetworkBehaviour {
 			resource3 -= lostR3;
 		}
 
-		if (lostR1+lostR2+lostR3 > 0) {
-			Debug.Log (this.transform.name + " loses some resources");
-		}
+		lostResources = lostR1+lostR2+lostR3;
+
+		if ( lostResources <= 0.0f) {
+			lostResources = 0.0f;
+		} 
+			
+		return lostResources;
 	}
 
 	[ClientRpc]

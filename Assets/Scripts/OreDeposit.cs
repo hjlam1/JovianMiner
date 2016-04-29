@@ -4,6 +4,10 @@ using UnityEngine.Networking;
 
 public class OreDeposit : NetworkBehaviour {
 
+
+	private float rapidMineFactor = 2.0f;
+	private float rapidMineCost = 20.0f;
+
 	[SyncVar] public float depositsLeft;
 	[SyncVar] public float ore1;
 	[SyncVar] public float ore2;
@@ -12,6 +16,7 @@ public class OreDeposit : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
 		SetDepositQuantity();
 
 	}
@@ -31,6 +36,20 @@ public class OreDeposit : NetworkBehaviour {
 			if (other.GetComponent <joystickTest>().isMiningOn) {
 				MiningOperation(other);
 				//Debug.Log ("Mining");
+			}
+			if ((depositsLeft > 0.0f) && (other.transform.name == "GuangHua") && (other.GetComponent<Resources>().GotResource(999.0f, 0f, 20.0f, 0f, 0f)) &&((Input.GetButtonDown("Com2G")) || (Input.GetKeyUp(KeyCode.S)))) {
+				depositsLeft = 0.0f;
+				other.GetComponent<Resources>().resource1 += ore1 * rapidMineFactor; 
+				other.GetComponent<Resources>().resource2 += ore2 * rapidMineFactor;
+				other.GetComponent<Resources>().resource3 += ore3 * rapidMineFactor;
+				other.GetComponent<Resources>().UseResource(999.0f, 0f, rapidMineCost, 0f, 0f);
+			}
+			if ((depositsLeft > 0.0f) && (other.transform.name == "OnyxHill") && (other.GetComponent<Resources>().GotResource(999.0f, 0f, 20.0f, 0f, 0f)) && ((Input.GetButtonDown("Com2O")) || (Input.GetKeyUp(KeyCode.N)))) {
+				depositsLeft = 0.0f;
+				other.GetComponent<Resources>().resource1 += ore1 * rapidMineFactor; 
+				other.GetComponent<Resources>().resource2 += ore2 * rapidMineFactor;
+				other.GetComponent<Resources>().resource3 += ore3 * rapidMineFactor;
+				other.GetComponent<Resources>().UseResource(999.0f, 0f, rapidMineCost, 0f, 0f);
 			}
 		}
 	}

@@ -8,8 +8,9 @@ public class joystickTest : NetworkBehaviour {
 	private float speedFactor = 2.0f;
 	private float revRange = 2.0f;
 	private float superChargerFactor = 1.0f;
-	private float superChargerStart = 0.75f;
-	private float maxSuperChargerVolume = 0.4f;
+	private float superChargerStart = 0.85f;
+	private float maxSuperChargerVolume = 1.0f;
+	private float fuelConsumption = 5.0f;
 	public bool isMiningOn = false;
 	public float miningStrength;
 	private float baseMiningStrength = 400.0f;  // MINING RATE
@@ -35,12 +36,13 @@ public class joystickTest : NetworkBehaviour {
 
 			if (ship.name.Equals("GuangHua")) {
 
-				if (Mathf.Abs (Input.GetAxis ("DriveG")) > superChargerStart) {
-					superChargerFactor = 1.75f;
+				if ((Mathf.Abs (Input.GetAxis ("DriveG")) > superChargerStart) && (this.GetComponent<Resources>().GotResource(0.0f, fuelConsumption * Time.deltaTime, 0.0f, 0.0f, 0.0f))) {
+					superChargerFactor = 2.75f;
+					this.GetComponent<Resources>().UseResource(0.0f, fuelConsumption * Time.deltaTime, 0.0f, 0.0f, 0.0f);
 				} else {
 					superChargerFactor = 1.0f;
 				}
-				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveG") * speedFactor * superChargerFactor);
+				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveG") * speedFactor * superChargerFactor * this.GetComponent<Resources>().resource4 / 1000);
 				if (Input.GetAxis("DriveG") > 0) {
 					ship.transform.Rotate (Vector3.up * Input.GetAxis ("SteeringG"));
 				} else if (Input.GetAxis("DriveG") < 0) {
@@ -58,12 +60,13 @@ public class joystickTest : NetworkBehaviour {
 
 			if (ship.name.Equals("OnyxHill")) {
 
-				if (Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart) {
-					superChargerFactor = 1.75f;
+				if ((Mathf.Abs (Input.GetAxis ("DriveO")) > superChargerStart ) && (this.GetComponent<Resources>().GotResource(0.0f, fuelConsumption * Time.deltaTime, 0.0f, 0.0f, 0.0f))) {
+					superChargerFactor = 2.75f;
+					this.GetComponent<Resources>().UseResource(0.0f, fuelConsumption * Time.deltaTime, 0.0f, 0.0f, 0.0f);
 				} else {
 					superChargerFactor = 1.0f;
 				}
-				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveO") * speedFactor * superChargerFactor);
+				ship.GetComponent<CharacterController>().SimpleMove(transform.forward * Input.GetAxis ("DriveO") * speedFactor * superChargerFactor * this.GetComponent<Resources>().resource4 / 1000);
 				ship.transform.Rotate (Vector3.up * Input.GetAxis ("SteeringO"));
 
 				if (Input.GetButtonDown("Com1O")) {

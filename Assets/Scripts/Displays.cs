@@ -22,9 +22,7 @@ public class Displays : NetworkBehaviour
 	{
 		if (Input.GetKey("escape"))
 			Application.Quit();
-		if (Input.GetKey(KeyCode.H)) {
-			
-		}
+		
 
 
 	}
